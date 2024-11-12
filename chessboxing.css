@@ -1,0 +1,272 @@
+/* Importing the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+/* Setting up a general style for the main content */
+main {
+    /* Setting up the maximum with as well as centering the content */
+    max-width: 80ch;
+    margin: 0 auto 0 auto;
+    padding: 1rem 3rem 1rem 3rem;
+    font-family: "Crimson Text", "Times New Roman", sans-serif;  
+    font-size: 14pt;
+    background: #ffffff;
+    text-align: justify;
+}
+
+/* Styling up the header */
+header {
+    /* Setting up the maximum width, centering the content and adding a backgroung image */
+    max-width: 80ch;
+    margin: 0 auto 0 auto; 
+    padding: 2rem 3rem 2rem 3rem;
+    position: relative;
+    text-align: center;
+    font-family: "Kanit", Arial, serif;
+    background: #010204 url(https://github.com/dinikap/CSC8018_cw1/blob/8536c59679681aac9f4f24895a2a5390c06daaa9/CSC8018%20coursework%20images%202023/chessboxing_background.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Removing default decoration, in our case to get rid of the underlining of the links */
+nav {
+    text-decoration: none;
+}
+
+/* Styling navigation links */
+nav ul {
+    /* Positioning the navigation links towards the bottom right */
+    position: absolute;
+    bottom: 0rem;
+    right: 2rem;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling listed items in the navigation menu */
+nav li {
+    /* Displaying the items as inline-block elements and adding padding around each item. */
+    display: inline-block;
+    padding: 1rem;
+}
+
+/* Styling the navigation link hover effect */
+.hover {
+    /* Defining the text color and the background */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Color and background changes when hovered */
+.hover:hover {
+    color: #fefe00;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+/* Styling the body */
+body {
+    /* Setting maximum width and centering the content */
+    position: relative;
+    max-width: 80ch;
+    margin: 0 auto 0 auto; 
+    padding: 0;
+    background: #bbbbbb;
+}
+
+/* Styling Header 1 */
+h1 {
+    /* Aligning the text to left, setting up the font size and adjusting the color to white */
+    font-size: 52pt;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* Setting the font family up for headers and navigation */
+h1, h2, nav {
+    font-family: 'Kanit', Arial, serif;
+}
+
+/* Styling Header 2 */
+h2 {
+    /* Setting up the colour and adjusting the font size */
+    color: #607293;
+    font-size: 20pt;
+}
+
+/* Centering the paragraph */
+.center_paragraph {
+    text-align: center;
+}
+
+/* Styling the boxes */
+figure.boxes{
+    /* Styling and floating the boxes to the right */
+    float: right;
+    width: 300px;
+    padding: 1em 1em 1em 1em;
+    margin: 0.5em;
+    margin-right: 0em;
+    border-radius: 0.5em;
+    text-align: center;
+    font-size: 12pt;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 3pt;
+}
+
+/* Styling the images inside the figures */
+figure img {
+    width: 300px;
+    height: auto;
+}
+
+/* Styling the video inside the figure */
+figure iframe {
+    width: 300px;
+    height: auto;
+}
+
+/* Styling the timeline box */
+div.chessboxing_timeline {
+    /*Adding padding, rounding the corners of the box and positioning the box relatively */
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5em;
+    position: relative;
+}
+
+/* Styling for the tables */
+table {
+    /* Adding borders to the top and bottom and collapsing them */
+    border-top: 2pt solid #cccccc;
+    border-bottom: 2pt solid #cccccc;
+    border-collapse: collapse;
+}
+
+/* Styling the header of the table */
+table thead {
+    /* Adding a border to the bottom */
+    border-bottom: 2pt solid #cccccc;
+}
+
+/* Styling the cells of the table */
+th, td {
+    /* Adding padding to the cells and a bottom border for seperating the rows */
+    padding-top: 0.25rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1pt solid #cccccc;
+}
+
+/* Styling the paragraphs inside the div elements */
+div p {
+    /* Centering the text, adding margin and setting the font to italic */
+    text-align: center;
+    margin: 1rem;
+    font-style: italic;
+}
+
+/* Styling the footer */
+footer {
+    /* Aligning the text to the center, adding padding, setting up the font family and size, as well as the colour and background colour */
+    text-align: center;
+    padding: 2em;
+    font-family: "Crimson Text", "Times New Roman", sans-serif;  
+    font-size: 12pt;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Styling the navigation bar list */
+.navbar_list {
+    /* Setting the background size */
+    background-size: cover;
+}
+
+/* Styling the navigation bar list when hovered */
+.navbar_list li:hover {
+    /* Setting the text colour */
+    color: #fefe00;
+}
+
+/* Styling the pseudo-elements for Header 2 elements(chessboxing1, chessboxing2, chessboxing3, chessboxing4) by inserting the chess piece Unicode characters and defining the font size, family and weight*/
+h2#chessboxing1:before {
+    content: '\2655';
+    font-size: 30pt;
+    font-family: "Kanit", Arial, serif;
+    font-weight: normal;
+}
+
+h2#chessboxing2:before {
+    content: '\265a';
+    font-size: 30pt;
+    font-family: "Kanit", Arial, serif;
+    font-weight: normal;
+}
+
+h2#chessboxing3:before {
+    content: '\2656';
+    font-size: 30pt;
+    font-family: "Kanit", Arial, serif;
+    font-weight: normal;
+}
+
+h2#chessboxing4:before {
+    content: '\265d';
+    font-size: 30pt;
+    font-family: "Kanit", Arial, serif;
+    font-weight: normal;
+}
+
+div.chessboxing_timeline {
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 3pt;
+    font-size: 12pt;
+}
+
+/* Styling the unordered bulletpoint lists */
+.bulletpoint {
+    /* Making space between the list items by adding margin to the bottom of every item */
+    margin-bottom: 12px;
+  }
+/* Styling the table wrapper */
+  #table_wrapper{
+    /* Displaying the content as a flexbox with the row direction and aligning the items to the center */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+  }
+
+  /* Styling the chessboxing map */
+  #chessboxing_map{
+    /* Adjusting the width and height */
+    width: 80%;
+    height: 50%;
+  }
+
+  /* Styling the timeline table */
+  #timeline_table{
+    /* Adjusting the width */
+    width: 80%;
+  }
+
+/* Media query for the responsiveness for up to 600px screen width*/
+@media screen and (max-width: 600px) {
+    main {
+        /* Adjusting the padding of main content for smaller screens*/
+      padding: 1rem 1.5rem;
+    }
+  }
+
+/* Media query for the responsiveness for up to 200px screen width*/
+  @media screen and (max-width: 200px) {
+    main {
+        /* Further adjusting the padding of main content for even smaller screens*/
+      padding: 0.5rem 1rem;
+    }
+  } 
+  
